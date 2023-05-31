@@ -1,0 +1,157 @@
+﻿@{
+    this.ViewData["Title"] = "Home Page";
+}
+
+<div class="page-hero bg-white text-info" id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <div class="title text-center pt-1">
+                    <h1 class="text-info">Multi-factor authentication</h1>
+                    <h4 class="text-info">A simple system for for reliable data protection.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about" class="intro bg-light">
+    <div class="container text-center">
+        <h2>About</h2>
+        <div class="section desc text-left">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <p class="lead">
+                        <b>Multi-factor authentication</b> is your reliable assistant for tracking the progress of your students.
+                        It's simple and easy to use!
+                    </p>
+                    <p class="lead">
+                        The goal of this graduation project is to develop a secure multi-factor authentication (MFA) system using the MAC address as a token and implementing device binding while restricting the number of authorization attempts. The project will be implemented using C# and the .NET framework, leveraging their robust features and libraries for secure development.
+
+The project will focus on leveraging the unique MAC address of each device as a token for authentication. By binding the MAC address to the user's account, the system will ensure that only authorized devices can access the web application. This will add an extra layer of security, preventing unauthorized access even if the user's credentials are compromised.
+
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+
+            <div class="blog-posts p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="component">
+                            <div class="card mb-3">
+                                <div class="card-header text-info" style="font-size: xx-large">
+                                    <i class="fas fa-folder-plus"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Make Quiz</h4>
+                                    <p class="card-text" style="display:none">
+                                        Creating quiz is now easier than ever with our user-friendly system.
+                                        You will be able to store all of your quizzes in one place, order them by categories and modify them.
+                                        Registering as Teacher gives you the opportunity to make groups, where you can add students.
+                                        Teachers can create events and set starting time, duration and quiz for the event.
+                                        They also can choose which group to take part in that event.
+                                        This functionality is perfect for testing the current progress of your students,
+                                        because you will receive their result as soon as they take the quiz.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-outline-primary read">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="component">
+                            <div class="card mb-3">
+                                <div class="card-header text-warning" style="font-size: xx-large">
+                                    <i class="fas fa-folder-open"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Take Quiz</h4>
+                                    <p class="card-text" style="display:none">
+                                        In order to use the system, students must be registered users.
+                                        The shortcut for taking a quiz can be used if you know the quiz password.
+                                        If you don't, you can access your active quizzes and events from the menu.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-outline-warning read">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="component">
+                            <div class="card mb-3">
+                                <div class="card-header text-danger" style="font-size: xx-large">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Export To PDF</h4>
+                                    <p class="card-text" style="display:none">
+                                        The teacher can print every quiz from quiz details page.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-outline-danger read">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="component">
+                            <div class="card mb-3">
+                                <div class="card-header text-info" style="font-size: xx-large">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Invite Students</h4>
+                                    <p class="card-text" style="display:none">
+                                        The teacher can invite students in several ways.
+                                        You can create group of students and send them email that contains the password of the quiz.
+                                        You also can create quiz event and assign it to a group. That way every student in the group will see that
+                                        event in its own account as pending and be able to enter the quiz when event becomes active.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-outline-info read">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+@section About
+    {
+    <li class="nav-item">
+        <a class="nav-link" href="#about">
+            About
+        </a>
+    </li>
+}
+@section Register
+    {
+    <li class="nav-item">
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">
+            Register
+        </a>
+    </li>
+}
+@section Login
+    {
+    <li class="nav-item">
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">
+            Log in
+        </a>
+    </li>
+}
+
+
